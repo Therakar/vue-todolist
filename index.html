@@ -26,19 +26,10 @@
             </form>
             <div class="element-container">
                 <ul>
-                    <li class="element">
-                        {{text}}
+                    <li class="element" v-for="(element, index) in elementsList">
+                        <p>{{elementsList[index].text}}</p>
                        <i class="fa-solid fa-xmark"></i> 
                     </li>
-                    <li class="element">
-                        {{text}}
-                       <i class="fa-solid fa-xmark"></i> 
-                    </li>
-                    <li class="element">
-                        {{text}}
-                       <i class="fa-solid fa-xmark"></i> 
-                    </li>
-                    
                 </ul>
             </div>
             
