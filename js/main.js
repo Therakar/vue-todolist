@@ -5,6 +5,7 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
+        newElement: '',
         elementsList: [
             {
                 text: 'Fare la spesa',
@@ -20,5 +21,11 @@ const { createApp } = Vue
             },
         ]
       }
+    },
+    methods: {
+        addElement() {
+            this.elementsList.push(this.newElement); //pusha il nuovo elemento
+            this.newElement= ''; //svuota la variabile new element
+        }
     }
   }).mount('#app');
