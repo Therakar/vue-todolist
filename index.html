@@ -24,7 +24,7 @@
                 <img src="img/logo.png" alt="logo">
             </div>
             <form class="element-input" @submit.prevent="addElement">
-                <input type="text" placeholder="Inserisci una nuova task" v-model="newElement" required>
+                <input type="text" placeholder="Inserisci una nuova task" v-model="newElement.text" required>
                 <button type="submit">Aggiungi</button> 
             </form>
             <div class="element-container">
@@ -37,10 +37,6 @@
             </div>
             
         </div>
-
-
-
-        
         
         <!-- link js -->
         <script src="js/main.js"></script>
