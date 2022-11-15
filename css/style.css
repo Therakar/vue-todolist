@@ -83,3 +83,7 @@ li:last-of-type{
     border-bottom: 1px solid gray;
     margin-bottom: 15px;
 }
+
+.completed {
+    text-decoration: line-through;
+}

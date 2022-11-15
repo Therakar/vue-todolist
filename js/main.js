@@ -16,11 +16,11 @@ const { createApp } = Vue
             elementsList: [
                 {
                     text: 'Fare la spesa',
-                    done: true
+                    done: false
                 },
                 {
                     text: 'Fare l\'esercizio',
-                    done: false
+                    done: true
                 },
                 {
                     text: 'Riordinare la casa',
@@ -44,6 +44,13 @@ const { createApp } = Vue
             removeElement(i){
                 this.elementsList.splice(i, 1);  
             },
+            completedTask(i){
+                if(this.elementsList[i].done === false){ //SE l'elemento done ha valore false al momento del click
+                  this.elementsList[i].done = true; //il valore viene cambiato a true
+                } else {
+                  this.elementsList[i].done = false;//ALTRIMETNI viene cambiato a false
+                }
+              },
         }
 }).mount('#app')
 

@@ -35,7 +35,7 @@
             <div class="element-container">
                 <ul>
                     <li class="element" v-for="(element, index) in elementsList">
-                        <p>{{elementsList[index].text}}</p>
+                        <p @click="completedTask(index)" :class="{completed: element.done === true}" >{{elementsList[index].text}}</p>
                        <i class="fa-solid fa-xmark" @click="removeElement(index)"></i> 
                     </li>
                 </ul>
