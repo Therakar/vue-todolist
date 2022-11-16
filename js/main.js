@@ -13,20 +13,7 @@ const { createApp } = Vue
             },
 
             // array di oggetti che contiene le tasks
-            elementsList: [
-                {
-                    text: 'Fare la spesa',
-                    done: false
-                },
-                {
-                    text: 'Fare l\'esercizio',
-                    done: true
-                },
-                {
-                    text: 'Riordinare la casa',
-                    done: false
-                },
-            ]
+            elementsList: []
         }
         },
 
@@ -45,7 +32,7 @@ const { createApp } = Vue
                 this.elementsList.splice(i, 1);  
             },
             completedTask(i){
-                if(this.elementsList[i].done === false){ //SE l'elemento done ha valore false al momento del click
+                if (this.elementsList[i].done === false){ //SE l'elemento done ha valore false al momento del click
                   this.elementsList[i].done = true; //il valore viene cambiato a true
                 } else {
                   this.elementsList[i].done = false;//ALTRIMETNI viene cambiato a false

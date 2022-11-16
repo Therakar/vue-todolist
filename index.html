@@ -33,12 +33,13 @@
                 <button type="submit">Aggiungi</button> 
             </form>
             <div class="element-container">
-                <ul>
+                <ul v-if="elementsList.length > 0">
                     <li class="element" v-for="(element, index) in elementsList">
-                        <p @click="completedTask(index)" :class="{completed: element.done === true}" >{{elementsList[index].text}}</p>
+                        <p @click="completedTask(index)" :class="{completed: element.done}" >{{elementsList[index].text}}</p>
                        <i class="fa-solid fa-xmark" @click="removeElement(index)"></i> 
                     </li>
                 </ul>
+                <h3 v-else> Non ci sono task! </h3>
             </div>
             
         </div>
