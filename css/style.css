@@ -1,89 +1,94 @@
 /* RESET */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    
-    font-family: 'Roboto', sans-serif;
-
+body {
+  font-family: "Roboto", sans-serif;
 }
 
-.container{
-    margin: auto;
-    padding: 25px;
-    display: flex;
-    width: 700px;
-    height: 480px;
-    background-color: white;
-    margin-top: 100px;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-
+.container {
+  margin: auto;
+  padding: 25px;
+  display: flex;
+  width: 700px;
+  height: 480px;
+  background-color: white;
+  margin-top: 100px;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.logo img{
-    width: 300px;
+.logo h1 {
+  width: 300px;
 }
 
-.element-input{
-    padding: 20px;
-    width: 100%;
-    text-align: center;
+.element-input {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
 }
 
-input{
-    width: 60%;
-    padding: 12px 20px;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-right: 10px;
+input {
+  width: 60%;
+  padding: 12px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-right: 10px;
 }
 
-input:focus{
-    outline-color: rgb(218, 18, 218);
+input:focus {
+  outline-color: rgb(218, 18, 218);
 }
 
-button{
-    padding: 12px 20px;
-    border: 1px solid black;
-    border-radius: 10px;
+button {
+  padding: 12px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
-.element-container{
-    background-color: lightgray;
-    width: 90%;
-    min-height: 30px;
-    border-radius: 10px;
+.element-container {
+  background-color: lightgray;
+  width: 90%;
+  min-height: 30px;
+  border-radius: 10px;
 }
 
-ul{
-    display: flex;
-    flex-wrap: wrap;
+ul {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-li{
-    margin: 0 10px;
-    width: 100%;
-    padding: 10px;
-    padding-bottom: 5px;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
+li {
+  margin: 0 10px;
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 5px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
-li:not(:first-of-type){
-    border-top: 1px solid gray;
+li:not(:first-of-type) {
+  border-top: 1px solid gray;
 }
 
-li:last-of-type{
-    border-bottom: 1px solid gray;
-    margin-bottom: 15px;
+li:last-of-type {
+  border-bottom: 1px solid gray;
+  margin-bottom: 15px;
+}
+
+li:hover {
+  cursor: pointer;
 }
 
 .completed {
-    text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+h3 {
+  padding: 10px;
 }
